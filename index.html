@@ -1,0 +1,369 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pipernet</title>
+	<meta name="description" content="Documentation for pipernet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">pipernet</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>pipernet</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#pipernet" id="pipernet" style="color: inherit; text-decoration: none;">
+					<h1>PiperNet</h1>
+				</a>
+				<p><img src="https://github.com/grp202004/PiperNet/workflows/Deploy%20master%20to%20GitHub%20Pages/badge.svg?branch=master" alt="Deploy master to GitHub Pages"> <img src="https://github.com/grp202004/PiperNet/workflows/Coveralls/badge.svg" alt="Coveralls"></p>
+				<p>An interactive 2D/3D cluster graph visualization system that runs in your browsers as well as on desktop.</p>
+				<p><a href="https://grp202004.github.io/pipernet.github.io/"><strong>Stable Beta</strong> - Launch stable beta version of PiperNet in your browser</a></p>
+				<p><a href="https://grp202004.github.io/PiperNet-Docs/"><strong>Documentation</strong> - Documentation of this project</a></p>
+				<p><a href="https://kaby-lake.github.io/pipernetDev.github.io/"><strong>Canary</strong> - Launch early access canary version of PiperNet in your browser</a></p>
+				<a href="#about" id="about" style="color: inherit; text-decoration: none;">
+					<h2>About</h2>
+				</a>
+				<p>This project aims to help researchers map the existing information onto the 3D graphs, and discover the undetected details behind the real-world datasets, as well as modify them in various ways.</p>
+				<a href="#feature-highlights" id="feature-highlights" style="color: inherit; text-decoration: none;">
+					<h2>Feature Highlights</h2>
+				</a>
+				<a href="#interactive-graph-visualization" id="interactive-graph-visualization" style="color: inherit; text-decoration: none;">
+					<h3>Interactive Graph Visualization</h3>
+				</a>
+				<p>Visualize your graph in 3D with interactive force-directed layout, with automatic sizing and coloring, and even full control over every node for customization!</p>
+				<a href="#data-import" id="data-import" style="color: inherit; text-decoration: none;">
+					<h3>Data Import</h3>
+				</a>
+				<p>PiperNet accepts both the CSV and <a href="https://gephi.org/gexf/format/">GEXF</a> inputs. The following possible approaches are the several ways you can import data to this application.</p>
+				<hr>
+				<p><strong>- Importing nodes with labels and their relations</strong></p>
+				<p>The easiest is probably to just have a csv file like this one:</p>
+				<pre><code><span style="color: #001080">Source</span><span style="color: #000000">,    </span><span style="color: #001080">Target</span>
+<span style="color: #001080">Jeremy</span><span style="color: #000000">,    </span><span style="color: #001080">Jennifer</span>
+<span style="color: #001080">Valerian</span><span style="color: #000000">,  </span><span style="color: #001080">Jeremy</span>
+</code></pre>
+				<p>which specify the simple undirected relationship between <code>Source</code> and <code>Target</code>. This type of input kind can be achieved by selecting &quot;<strong>only edge file</strong>&quot; on import dialog.</p>
+				<hr>
+				<p><strong>- Importing more than labels: nodes and edges attributes</strong></p>
+				<p>To import attributes we will need to proceed differently. We need 2 csv files: one for the list of nodes, one for the list of relations (edges)</p>
+				<p>Nodes must have at least an <strong><code>ID</code></strong> (you can specify which column is the ID), other fields are optional, an example file with a list of nodes:</p>
+				<pre><code><span style="color: #001080">Id</span><span style="color: #000000">, </span><span style="color: #001080">Label</span><span style="color: #000000">,      </span><span style="color: #267F99">Date</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">Birth</span><span style="color: #000000">,  </span><span style="color: #001080">Place</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">Birth</span><span style="color: #000000">,    </span><span style="color: #001080">Years</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">experience</span><span style="color: #000000">,    </span><span style="color: #001080">Rating</span>
+<span style="color: #098658">3</span><span style="color: #000000">,  </span><span style="color: #001080">Dubois</span><span style="color: #000000">,     </span><span style="color: #098658">17</span><span style="color: #000000">/</span><span style="color: #098658">09</span><span style="color: #000000">/</span><span style="color: #098658">1980</span><span style="color: #000000">,     </span><span style="color: #001080">Paris</span><span style="color: #000000">,             </span><span style="color: #098658">8</span><span style="color: #000000">,                      </span><span style="color: #098658">9.27</span>
+<span style="color: #098658">1</span><span style="color: #000000">,  </span><span style="color: #001080">Jeremy</span><span style="color: #000000">,     </span><span style="color: #098658">25</span><span style="color: #000000">/</span><span style="color: #098658">03</span><span style="color: #000000">/</span><span style="color: #098658">1978</span><span style="color: #000000">,     </span><span style="color: #001080">Tampa</span><span style="color: #000000">,             </span><span style="color: #098658">8</span><span style="color: #000000">,                      </span><span style="color: #098658">4.34</span>
+<span style="color: #098658">45</span><span style="color: #000000">, </span><span style="color: #001080">Rodriguez</span><span style="color: #000000">,  </span><span style="color: #098658">30</span><span style="color: #000000">/</span><span style="color: #098658">04</span><span style="color: #000000">/</span><span style="color: #098658">1985</span><span style="color: #000000">,     </span><span style="color: #001080">Berlin</span><span style="color: #000000">,            </span><span style="color: #098658">5</span><span style="color: #000000">,                      </span><span style="color: #098658">6.66</span>
+</code></pre>
+				<p>Edges must have at least a <strong><code>Source</code></strong> and <strong><code>Target</code></strong>, other fields are optional, an example file with a list of edges:</p>
+				<pre><code><span style="color: #001080">Source</span><span style="color: #000000">, </span><span style="color: #001080">Target</span><span style="color: #000000">, </span><span style="color: #001080">Weight</span><span style="color: #000000">,   </span><span style="color: #001080">Where</span><span style="color: #000000"> </span><span style="color: #001080">first</span><span style="color: #000000"> </span><span style="color: #001080">met</span>
+<span style="color: #098658">1</span><span style="color: #000000">,      </span><span style="color: #098658">45</span><span style="color: #000000">,     </span><span style="color: #098658">3</span><span style="color: #000000">,        </span><span style="color: #001080">London</span>
+</code></pre>
+				<p><strong>- Importing with GEXF format</strong></p>
+				<p><a href="https://gephi.org/gexf/format/">GEXF</a> (Graph Exchange XML Format) is a language for describing complex networks structures, their associated data and dynamics. PiperNet can import and export GEXF files with all necessary graph data stored in it.</p>
+				<p>The <a href="https://gephi.org/gexf/format/dynamics.html">Dynamic GEXF</a> is currently not yet supported in PiperNet, and might not support unless enough functionalities added to enhance the interactivity of Dynamic GEXF.</p>
+				<a href="#graphs-for-testing-and-demos" id="graphs-for-testing-and-demos" style="color: inherit; text-decoration: none;">
+					<h3>Graphs for Testing and Demos</h3>
+				</a>
+				<p><a href="./src/samples/">Sample Datasets</a> are located inside this repository, enjoy and have fun :)</p>
+				<a href="#data-visualization-in-3d" id="data-visualization-in-3d" style="color: inherit; text-decoration: none;">
+					<h3>Data Visualization in 3D</h3>
+				</a>
+				<p>To view the graph from different angle and size, the following operations can be applied:</p>
+				<ul>
+					<li>  Rotate: hold the left mouse</li>
+					<li>  Pan: hold the right mouse</li>
+					<li>  Zoom: mouse wheel</li>
+				</ul>
+				<p>For more details of a certain node, mouse hovering can show a label of the node ID while the node turns red, with detailed information of the node such as node ID and other attributes being displayed in a table that is editable on the right-top corner</p>
+				<a href="#3d-clusters" id="3d-clusters" style="color: inherit; text-decoration: none;">
+					<h3>3D Clusters</h3>
+				</a>
+				<p>Choose <strong>Clustered by</strong> at the top-right of the scene. All attributes of the nodes will be shown in the menu. By default, the cluster is none and no cluster is formed. When a new attribute is picked for cluster, the graph will be refreshed. Nodes in different clusters will be packed by spheres or convex hull (can be set in Graph Options on the left panel) in different colors.</p>
+				<a href="#node-and-edge-datasheet" id="node-and-edge-datasheet" style="color: inherit; text-decoration: none;">
+					<h3>Node and Edge Datasheet</h3>
+				</a>
+				<p>The node and edge datasheet shows the detailed information as well as various operation on the node and edge, including but not limited to: <strong>Add</strong> new Nodes and Edges, <strong>Delete</strong> Nodes and Edges, <strong>Search</strong> and <strong>Filter</strong> the table, <strong>Alter</strong> the attributes...</p>
+				<a href="#multi-selection" id="multi-selection" style="color: inherit; text-decoration: none;">
+					<h3>Multi-selection</h3>
+				</a>
+				<p>Switch to <strong>Node Selection</strong> mode choose <strong>Click</strong>. Left click the nodes to select or deselect the nodes.
+				Choose <strong>Box Selection</strong> and hold the mouse to draw a rectangle for node selection. The nodes&#39; details are shown in the bottom table.</p>
+				<a href="#context-menu" id="context-menu" style="color: inherit; text-decoration: none;">
+					<h3>Context Menu</h3>
+				</a>
+				<p>right-click on the background or specific node to activate context menu, with rich buttons click: Add Node, Add Edge, Delete Node, Delete Edge, Form a new cluster, Cancel Selection ans Delete Selected Nodes.</p>
+				<ul>
+					<li><pre><code><span style="color: #000000">  </span><span style="color: #001080">Add</span><span style="color: #000000"> Node: </span><span style="color: #001080">add</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #001080">on</span><span style="color: #000000"> </span><span style="color: #001080">the</span><span style="color: #000000"> </span><span style="color: #001080">stage</span>
+</code></pre>
+					</li>
+					<li>  Delete Edge: after clicking Delete Edge, hover the mouse on the candidate edge (listed in the right-bottom corner to preview the edge to be deleted)</li>
+					<li>  Form a new cluster: after node selection and clicking Form a new cluster, a new cluster is generated containing these selected nodes</li>
+					<li>  Add Edge: choose the source node ID and target node ID to form a new edge</li>
+					<li>  Delete Node: delete the single selected node</li>
+					<li>  Cancel Selection: Cancel selection on nodes</li>
+					<li>  Delete Selected Nodes: delete selected nodes in dispatch</li>
+				</ul>
+				<a href="#graph-options" id="graph-options" style="color: inherit; text-decoration: none;">
+					<h3>Graph Options</h3>
+				</a>
+				<p>Graph Options are used to change the style of the graph. The colors, shapes, size of nodes, edges, labels and clusters can be modified in this menu.</p>
+				<a href="#merge-cluster" id="merge-cluster" style="color: inherit; text-decoration: none;">
+					<h3>Merge Cluster</h3>
+				</a>
+				<p>Merge Several clusters into one cluster in <strong>Cluster Selection</strong> mode.</p>
+				<a href="#split-cluster" id="split-cluster" style="color: inherit; text-decoration: none;">
+					<h3>Split Cluster</h3>
+				</a>
+				<p>Split one cluster to two clusters following instructions in <strong>Cluster Splitting</strong> mode.</p>
+				<a href="#export-data" id="export-data" style="color: inherit; text-decoration: none;">
+					<h3>Export Data</h3>
+				</a>
+				<p>The fixed data can be exported to both the CSV and <a href="https://gephi.org/gexf/format/">GEXF</a> files.</p>
+				<pre><code>
+</code></pre>
+				<p>♥ Developed and maintained by <a href="https://github.com/grp202004">UNNC GRP 2020.04</a>. We are currently not accepting any contribution from other than the team members, but we are welcome will any issues raising and features advice.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_componentref.html">components/<wbr>Component<wbr>Ref</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs.html">components/<wbr>Dialogs</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_floatingcards.html">components/<wbr>Floating<wbr>Cards</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_navbar.html">components/<wbr>Navbar</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_addedgedialog.html">components/dialogs/<wbr>Add<wbr>Edge<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_addnodedialog.html">components/dialogs/<wbr>Add<wbr>Node<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_edgedatasheetdialog.html">components/dialogs/<wbr>Edge<wbr>Data<wbr>Sheet<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_exportdialog.html">components/dialogs/<wbr>Export<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_importgexfdialog.html">components/dialogs/<wbr>ImportGEXFDialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_nodedatasheetdialog.html">components/dialogs/<wbr>Node<wbr>Data<wbr>Sheet<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_dialogs_importdialog.html">components/dialogs/import<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_canvasdrawpanel.html">components/panels/<wbr>Canvas<wbr>Draw<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_canvasdrawstraightlinepanel.html">components/panels/<wbr>Canvas<wbr>Draw<wbr>Straight<wbr>Line<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_clusterpanel.html">components/panels/<wbr>Cluster<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_deleteedgeinteractionpanel.html">components/panels/<wbr>Delete<wbr>Edge<wbr>Interaction<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_edgespanel.html">components/panels/<wbr>Edges<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_graphoptionscard.html">components/panels/<wbr>Graph<wbr>Options<wbr>Card</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_interactionmodepanel_clustersplittingpanelstack.html">components/panels/<wbr>Interaction<wbr>Mode<wbr>Panel/<wbr>Cluster<wbr>Splitting<wbr>Panel<wbr>Stack</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_interactionmodepanel_interactionmodepanel.html">components/panels/<wbr>Interaction<wbr>Mode<wbr>Panel/<wbr>Interaction<wbr>Mode<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_interactionmodepanel_nodeselectionpanel.html">components/panels/<wbr>Interaction<wbr>Mode<wbr>Panel/<wbr>Node<wbr>Selection<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_labelspanel.html">components/panels/<wbr>Labels<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_multidetailpanel.html">components/panels/<wbr>Multi<wbr>Detail<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_nodedetailpanel.html">components/panels/<wbr>Node<wbr>Detail<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_nodespanel.html">components/panels/<wbr>Nodes<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_rightclickpanel.html">components/panels/<wbr>Right<wbr>Click<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_searchpanel.html">components/panels/<wbr>Search<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_selectionbox.html">components/panels/<wbr>Selection<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_clusterchooser.html">components/utils/<wbr>Cluster<wbr>Chooser</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_collapsable.html">components/utils/<wbr>Collapsable</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_colorpicker.html">components/utils/<wbr>Color<wbr>Picker</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_datasheetdialogwrapper.html">components/utils/<wbr>Data<wbr>Sheet<wbr>Dialog<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_inputformutils.html">components/utils/<wbr>Input<wbr>Form<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_nodeadder.html">components/utils/<wbr>Node<wbr>Adder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_nodechooser.html">components/utils/<wbr>Node<wbr>Chooser</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_simpleselect.html">components/utils/<wbr>Simple<wbr>Select</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_switchcollapsable.html">components/utils/<wbr>Switch<wbr>Collapsable</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_visualize_visualizer.html">components/visualize/<wbr>Visualizer</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state.html">state</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_cluster3dobjectstore.html">state/<wbr>Cluster3d<wbr>Object<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_clusterinteractionstore.html">state/<wbr>Cluster<wbr>Interaction<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_clusterstore.html">state/<wbr>Cluster<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_cssstore.html">state/<wbr>Css<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_graphdelegate.html">state/<wbr>Graph<wbr>Delegate</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_graphmutation.html">state/<wbr>Graph<wbr>Mutation</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_graphstore.html">state/<wbr>Graph<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_helperstackpanelstore.html">state/<wbr>Helper<wbr>Stack<wbr>Panel<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_importstore.html">state/<wbr>Import<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_nodeinteractionstore.html">state/<wbr>Node<wbr>Interaction<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_preferencesstore.html">state/<wbr>Preferences<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_searchstore.html">state/<wbr>Search<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_utils_mouseeventutils.html">state/utils/<wbr>Mouse<wbr>Event<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_utils_toasterutils.html">state/utils/<wbr>Toaster<wbr>Utils</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

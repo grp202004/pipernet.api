@@ -1,0 +1,683 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>default | pipernet</title>
+	<meta name="description" content="Documentation for pipernet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">pipernet</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">pipernet</a>
+				</li>
+				<li>
+					<a href="../modules/state_clusterinteractionstore.html">state/ClusterInteractionStore</a>
+				</li>
+				<li>
+					<a href="state_clusterinteractionstore.default.html">default</a>
+				</li>
+			</ul>
+			<h1>Class default</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>description</dt>
+						<dd><p>the cluster-mouse-interaction related filed and functions are hereby written in this class
+								such as <code>currentlyHoveredClusterId</code>, <code>selectedCluster</code> and <code>selectedClusters</code>,
+								these selection should be <code>flush()</code> after using(or before entering another interaction mode)
+								the callback functions of mouse events are presented as well to handle events like hover/left/rightClick.
+							There are also helper methods to deal with features like mergeCluster and SplitCluster.</p>
+							<p>In the cluster splitting procedure, after user draw a curved link,
+								the segment of that line will be stored in the <code>lineSegment</code> and <code>computeSplitCluster</code> will be called to compute the two stack of split nodes,
+							the result will be stored inside <code>confirmClusterSplittingTempData</code> waiting for the final <code>splitCluster()</code> function to confirm this operation</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Zichen XU</p>
+						</dd>
+						<dt>export</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">default</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#confirmclustersplittingtempdata" class="tsd-kind-icon">confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#currentlyhoveredclusterid" class="tsd-kind-icon">currently<wbr>Hovered<wbr>Cluster<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#drawpanelactivate" class="tsd-kind-icon">draw<wbr>Panel<wbr>Activate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#drawstraightline" class="tsd-kind-icon">draw<wbr>Straight<wbr>Line</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#linesegment" class="tsd-kind-icon">line<wbr>Segment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#selectedcluster" class="tsd-kind-icon">selected<wbr>Cluster</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#selectedclusters" class="tsd-kind-icon">selected<wbr>Clusters</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#clusterhovercallback" class="tsd-kind-icon">cluster<wbr>Hover<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#clusterleftclickcallback" class="tsd-kind-icon">cluster<wbr>Left<wbr>Click<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#clusterrightclickcallback" class="tsd-kind-icon">cluster<wbr>Right<wbr>Click<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#computesplitcluster" class="tsd-kind-icon">compute<wbr>Split<wbr>Cluster</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#flush" class="tsd-kind-icon">flush</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#mergeselectedclusters" class="tsd-kind-icon">merge<wbr>Selected<wbr>Clusters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#releaseselectedclusters" class="tsd-kind-icon">release<wbr>Selected<wbr>Clusters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#splitcluster" class="tsd-kind-icon">split<wbr>Cluster</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new default<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state_clusterinteractionstore.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L20">src/state/ClusterInteractionStore.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="state_clusterinteractionstore.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="confirmclustersplittingtempdata" class="tsd-anchor"></a>
+					<h3>confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L208">src/state/ClusterInteractionStore.ts:208</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>the temp data returned by splitting the cluster
+									the value attribute is either 0 or 1 to form two clusters
+								this data is saved to preview the split to user and wait for final confirmation</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentlyhoveredclusterid" class="tsd-anchor"></a>
+					<h3>currently<wbr>Hovered<wbr>Cluster<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">currently<wbr>Hovered<wbr>Cluster<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L30">src/state/ClusterInteractionStore.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>the cluster UUID (assigned by THREE.js) of the hovered cluster</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="drawpanelactivate" class="tsd-anchor"></a>
+					<h3>draw<wbr>Panel<wbr>Activate</h3>
+					<div class="tsd-signature tsd-kind-icon">draw<wbr>Panel<wbr>Activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L177">src/state/ClusterInteractionStore.ts:177</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>whether the drawing panel used in ClusterSplit is active</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="drawstraightline" class="tsd-anchor"></a>
+					<h3>draw<wbr>Straight<wbr>Line</h3>
+					<div class="tsd-signature tsd-kind-icon">draw<wbr>Straight<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L185">src/state/ClusterInteractionStore.ts:185</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>whether to draw a straight line or a curved line when clustering</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="linesegment" class="tsd-anchor"></a>
+					<h3>line<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">line<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L193">src/state/ClusterInteractionStore.ts:193</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>the line segments returned by drawing a line
+								it has the left/right-top points as well to form a polygon</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectedcluster" class="tsd-anchor"></a>
+					<h3>selected<wbr>Cluster</h3>
+					<div class="tsd-signature tsd-kind-icon">selected<wbr>Cluster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L37">src/state/ClusterInteractionStore.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>the selected Cluster UUID used in choosing which cluster to be split</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectedclusters" class="tsd-anchor"></a>
+					<h3>selected<wbr>Clusters</h3>
+					<div class="tsd-signature tsd-kind-icon">selected<wbr>Clusters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L44">src/state/ClusterInteractionStore.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>the selected Clusters UUID used in choosing which clusters to be merged</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clusterhovercallback" class="tsd-anchor"></a>
+					<h3>cluster<wbr>Hover<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cluster<wbr>Hover<wbr>Callback<span class="tsd-signature-symbol">(</span>uuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L93">src/state/ClusterInteractionStore.ts:93</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>this will only be active in the ClusterSelection and ClusterSplit
+										it will set the currentlyHoveredClusterId to this cluster</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uuid: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>of the custer on mouse hover</p>
+									</div>
+								</li>
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clusterleftclickcallback" class="tsd-anchor"></a>
+					<h3>cluster<wbr>Left<wbr>Click<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cluster<wbr>Left<wbr>Click<wbr>Callback<span class="tsd-signature-symbol">(</span>uuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L64">src/state/ClusterInteractionStore.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>this will only be active in the ClusterSelection and ClusterSplit
+										it will set the selectedCluster and add/remove this cluster in the selectedClusters list</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uuid: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>uuid of the custer on left-click</p>
+									</div>
+								</li>
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clusterrightclickcallback" class="tsd-anchor"></a>
+					<h3>cluster<wbr>Right<wbr>Click<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cluster<wbr>Right<wbr>Click<wbr>Callback<span class="tsd-signature-symbol">(</span>uuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L104">src/state/ClusterInteractionStore.ts:104</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>this will only be active in the ClusterSelection
+										it will set the selectedCluster to this cluster and open the rightClickPanel</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uuid: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>of the custer on mouse hover</p>
+									</div>
+								</li>
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="computesplitcluster" class="tsd-anchor"></a>
+					<h3>compute<wbr>Split<wbr>Cluster</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Split<wbr>Cluster<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L224">src/state/ClusterInteractionStore.ts:224</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>compute the clusterSplittingTempData based on the lineSegment data
+											using the polygonContains to determine which node is in selection
+											the value attribute is either 0 or 1 to form two clusters
+										this data is saved to preview the split to user and wait for final confirmation</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="flush" class="tsd-anchor"></a>
+					<h3>flush</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">flush<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L51">src/state/ClusterInteractionStore.ts:51</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>flush the above fields in situations like switching VisualizationMode
+										re-import or after graph mutation</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="mergeselectedclusters" class="tsd-anchor"></a>
+					<h3>merge<wbr>Selected<wbr>Clusters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Selected<wbr>Clusters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L124">src/state/ClusterInteractionStore.ts:124</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>loop through the selected clusters and set the nodes within that cluster
+											the newly-formed attribute is named _merge-cluster
+											and the value to that attribute is the Time() of this time
+										other nodes unrelated will be set to empty string in this attribute</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="releaseselectedclusters" class="tsd-anchor"></a>
+					<h3>release<wbr>Selected<wbr>Clusters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Selected<wbr>Clusters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L154">src/state/ClusterInteractionStore.ts:154</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>loop through the selected clusters and set the nodes within that cluster</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="splitcluster" class="tsd-anchor"></a>
+					<h3>split<wbr>Cluster</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">split<wbr>Cluster<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ClusterInteractionStore.ts#L278">src/state/ClusterInteractionStore.ts:278</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>this will be called when user confirm the cluster split
+											it will set the attribute of these two groups to be different
+										and clear the tempData</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/state_clusterinteractionstore.html">state/<wbr>Cluster<wbr>Interaction<wbr>Store</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="state_clusterinteractionstore.default.html" class="tsd-kind-icon">default</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#confirmclustersplittingtempdata" class="tsd-kind-icon">confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#currentlyhoveredclusterid" class="tsd-kind-icon">currently<wbr>Hovered<wbr>Cluster<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#drawpanelactivate" class="tsd-kind-icon">draw<wbr>Panel<wbr>Activate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#drawstraightline" class="tsd-kind-icon">draw<wbr>Straight<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#linesegment" class="tsd-kind-icon">line<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#selectedcluster" class="tsd-kind-icon">selected<wbr>Cluster</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#selectedclusters" class="tsd-kind-icon">selected<wbr>Clusters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#clusterhovercallback" class="tsd-kind-icon">cluster<wbr>Hover<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#clusterleftclickcallback" class="tsd-kind-icon">cluster<wbr>Left<wbr>Click<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#clusterrightclickcallback" class="tsd-kind-icon">cluster<wbr>Right<wbr>Click<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#computesplitcluster" class="tsd-kind-icon">compute<wbr>Split<wbr>Cluster</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#flush" class="tsd-kind-icon">flush</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#mergeselectedclusters" class="tsd-kind-icon">merge<wbr>Selected<wbr>Clusters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#releaseselectedclusters" class="tsd-kind-icon">release<wbr>Selected<wbr>Clusters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#splitcluster" class="tsd-kind-icon">split<wbr>Cluster</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

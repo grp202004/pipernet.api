@@ -1,0 +1,649 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>default | pipernet</title>
+	<meta name="description" content="Documentation for pipernet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">pipernet</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">pipernet</a>
+				</li>
+				<li>
+					<a href="../modules/state_importstore.html">state/ImportStore</a>
+				</li>
+				<li>
+					<a href="state_importstore.default.html">default</a>
+				</li>
+			</ul>
+			<h1>Class default</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>description</dt>
+						<dd><p>this class defines some necessary configs for the graph-importing procedures
+								such as the <code>INodeFileConfig</code> and <code>IEdgeFileConfig</code> for customizing the csv/gexf file parsing procedure
+								Other functions like <code>renderImportNode/EdgePreview</code> renders the preview table in the ImportDialog
+								and <code>importGraphFromCSV/GEXF</code> reads the file input and produce the <code>graphology</code> object to be assigned to <code>GraphStore</code>
+								with some basic error handling strategies
+							These functions are designed to be synchronized to prevent frozen of UI.</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Zichen XU</p>
+						</dd>
+						<dt>export</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">default</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="state_importstore.default.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#edgefilename" class="tsd-kind-icon">edge<wbr>File<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#gexffilename" class="tsd-kind-icon">gexf<wbr>File<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#importconfig" class="tsd-kind-icon">import<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#importdialogopen" class="tsd-kind-icon">import<wbr>Dialog<wbr>Open</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#importgexfdialogopen" class="tsd-kind-icon">importGEXFDialog<wbr>Open</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#isloading" class="tsd-kind-icon">is<wbr>Loading</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#nodefilename" class="tsd-kind-icon">node<wbr>File<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#selectededgefilefrominput" class="tsd-kind-icon">selected<wbr>Edge<wbr>File<wbr>From<wbr>Input</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#selectedgexffilefrominput" class="tsd-kind-icon">selectedGEXFFile<wbr>From<wbr>Input</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_importstore.default.html#selectednodefilefrominput" class="tsd-kind-icon">selected<wbr>Node<wbr>File<wbr>From<wbr>Input</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_importstore.default.html#importgraphfromcsv" class="tsd-kind-icon">import<wbr>Graph<wbr>FromCSV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_importstore.default.html#importgraphfromgexf" class="tsd-kind-icon">import<wbr>Graph<wbr>FromGEXF</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="state_importstore.default.html#readcsv" class="tsd-kind-icon">readCSV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_importstore.default.html#readedgecsv" class="tsd-kind-icon">read<wbr>EdgeCSV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="state_importstore.default.html#readgexf" class="tsd-kind-icon">readGEXF</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_importstore.default.html#readnodecsv" class="tsd-kind-icon">read<wbr>NodeCSV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_importstore.default.html#renderimportedgepreview" class="tsd-kind-icon">render<wbr>Import<wbr>Edge<wbr>Preview</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_importstore.default.html#renderimportnodepreview" class="tsd-kind-icon">render<wbr>Import<wbr>Node<wbr>Preview</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new default<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state_importstore.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L66">src/state/ImportStore.ts:66</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="state_importstore.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="edgefilename" class="tsd-anchor"></a>
+					<h3>edge<wbr>File<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">edge<wbr>File<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Choose Edge File ...&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L74">src/state/ImportStore.ts:74</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="gexffilename" class="tsd-anchor"></a>
+					<h3>gexf<wbr>File<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">gexf<wbr>File<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Choose GEXF File ...&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L80">src/state/ImportStore.ts:80</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="importconfig" class="tsd-anchor"></a>
+					<h3>import<wbr>Config</h3>
+					<div class="tsd-signature tsd-kind-icon">import<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>edgeFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_importstore.iedgefileconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdgeFileConfig</a><span class="tsd-signature-symbol">; </span>hasNodeFile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nodeFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_importstore.inodefileconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">INodeFileConfig</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L92">src/state/ImportStore.ts:92</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>edge<wbr>File<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_importstore.iedgefileconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdgeFileConfig</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>has<wbr>Node<wbr>File<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>node<wbr>File<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_importstore.inodefileconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">INodeFileConfig</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="importdialogopen" class="tsd-anchor"></a>
+					<h3>import<wbr>Dialog<wbr>Open</h3>
+					<div class="tsd-signature tsd-kind-icon">import<wbr>Dialog<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L82">src/state/ImportStore.ts:82</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="importgexfdialogopen" class="tsd-anchor"></a>
+					<h3>importGEXFDialog<wbr>Open</h3>
+					<div class="tsd-signature tsd-kind-icon">importGEXFDialog<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L84">src/state/ImportStore.ts:84</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isloading" class="tsd-anchor"></a>
+					<h3>is<wbr>Loading</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L72">src/state/ImportStore.ts:72</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nodefilename" class="tsd-anchor"></a>
+					<h3>node<wbr>File<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">node<wbr>File<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Choose Node File ...&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L77">src/state/ImportStore.ts:77</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectededgefilefrominput" class="tsd-anchor"></a>
+					<h3>selected<wbr>Edge<wbr>File<wbr>From<wbr>Input</h3>
+					<div class="tsd-signature tsd-kind-icon">selected<wbr>Edge<wbr>File<wbr>From<wbr>Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">File</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L87">src/state/ImportStore.ts:87</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectedgexffilefrominput" class="tsd-anchor"></a>
+					<h3>selectedGEXFFile<wbr>From<wbr>Input</h3>
+					<div class="tsd-signature tsd-kind-icon">selectedGEXFFile<wbr>From<wbr>Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">File</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L90">src/state/ImportStore.ts:90</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectednodefilefrominput" class="tsd-anchor"></a>
+					<h3>selected<wbr>Node<wbr>File<wbr>From<wbr>Input</h3>
+					<div class="tsd-signature tsd-kind-icon">selected<wbr>Node<wbr>File<wbr>From<wbr>Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">File</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L88">src/state/ImportStore.ts:88</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="importgraphfromcsv" class="tsd-anchor"></a>
+					<h3>import<wbr>Graph<wbr>FromCSV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Graph<wbr>FromCSV<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>graph<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>metadata<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_graphstore.imetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">IMetaData</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L254">src/state/ImportStore.ts:254</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>will create a Graph structure to store the nodes and edges in the imported File
+											should handle whether or not have the NodeFile, whether or not have the header of each file
+										if successfully imported, change the .isReady to be true</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>graph<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>metadata<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_graphstore.imetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">IMetaData</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="importgraphfromgexf" class="tsd-anchor"></a>
+					<h3>import<wbr>Graph<wbr>FromGEXF</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Graph<wbr>FromGEXF<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>graph<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>metadata<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_graphstore.imetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">IMetaData</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L332">src/state/ImportStore.ts:332</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>will create a Graph structure to store the nodes and edges in the imported File
+										please use try catch to avoid any invalid GEXF file</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>graph<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>metadata<span class="tsd-signature-symbol">: </span><a href="../interfaces/state_graphstore.imetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">IMetaData</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="readcsv" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> readCSV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">readCSV<span class="tsd-signature-symbol">(</span>fileObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span>, hasHeader<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, delimiter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L143">src/state/ImportStore.ts:143</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>read the CSV file specified by fileObject, with options defined by other paras
+										and return a list of objects containing the key-value pair of attribute-value</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileObject: <span class="tsd-signature-type">File</span></h5>
+								</li>
+								<li>
+									<h5>hasHeader: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>delimiter: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>{Promise&lt;any[]&gt;}
+							* where Object is of { attribute: number | string, anotherAttribute: number | string, ... } type</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="readedgecsv" class="tsd-anchor"></a>
+					<h3>read<wbr>EdgeCSV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>EdgeCSV<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L226">src/state/ImportStore.ts:226</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>helper function to read edge csv and call this.readCSV()</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>{Promise&lt;any[]&gt;}</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="readgexf" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> readGEXF</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">readGEXF<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L199">src/state/ImportStore.ts:199</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>parse the graph from import GEXF file specified in selectedGEXFFileFromInput
+										and return a Graph object</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Attributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>{Promise<Graph>}</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="readnodecsv" class="tsd-anchor"></a>
+					<h3>read<wbr>NodeCSV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>NodeCSV<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L239">src/state/ImportStore.ts:239</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>helper function to read node csv and call this.readCSV()</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>{Promise&lt;any[]&gt;}</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="renderimportedgepreview" class="tsd-anchor"></a>
+					<h3>render<wbr>Import<wbr>Edge<wbr>Preview</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">render<wbr>Import<wbr>Edge<wbr>Preview<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L362">src/state/ImportStore.ts:362</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>change the importConfig.edgeFile.topN to be the top 10 parsed elements in the input edge file
+											change the importConfig.edgeFile.columns to be the attributes of the imported edge file
+										set the .mapping.fromId and .mapping.toId to be the first and second (if have) attribute of the input edge file.</p>
+										<p>if successfully parsed, set the .isReady to be true, else set the.parseError</p>
+										<p>This function will autorun if user specify the selectedEdgeFileFromInput and the changes that this function will make is to get ready for the rendering of preview Table in the ImportDialog</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="renderimportnodepreview" class="tsd-anchor"></a>
+					<h3>render<wbr>Import<wbr>Node<wbr>Preview</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">render<wbr>Import<wbr>Node<wbr>Preview<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/5784cde/src/state/ImportStore.ts#L481">src/state/ImportStore.ts:481</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>change the importConfig.nodeFile.topN to be the top 10 parsed elements in the input node file
+											change the importConfig.nodeFile.columns to be the attributes of the imported node file
+										set the .mapping.id .mapping.cluster to be the first and second (if have) attribute of the input edge file.</p>
+										<p>if successfully parsed, set the .isReady to be true, else set the.parseError</p>
+										<p>This function will autorun if user specify the selectedNodeFileFromInput and the changes that this function will make is to get ready for the rendering of preview Table in the ImportDialog</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>Zichen XU</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/state_importstore.html">state/<wbr>Import<wbr>Store</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="state_importstore.default.html" class="tsd-kind-icon">default</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="state_importstore.default.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#edgefilename" class="tsd-kind-icon">edge<wbr>File<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#gexffilename" class="tsd-kind-icon">gexf<wbr>File<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#importconfig" class="tsd-kind-icon">import<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#importdialogopen" class="tsd-kind-icon">import<wbr>Dialog<wbr>Open</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#importgexfdialogopen" class="tsd-kind-icon">importGEXFDialog<wbr>Open</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#isloading" class="tsd-kind-icon">is<wbr>Loading</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#nodefilename" class="tsd-kind-icon">node<wbr>File<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#selectededgefilefrominput" class="tsd-kind-icon">selected<wbr>Edge<wbr>File<wbr>From<wbr>Input</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#selectedgexffilefrominput" class="tsd-kind-icon">selectedGEXFFile<wbr>From<wbr>Input</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_importstore.default.html#selectednodefilefrominput" class="tsd-kind-icon">selected<wbr>Node<wbr>File<wbr>From<wbr>Input</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_importstore.default.html#importgraphfromcsv" class="tsd-kind-icon">import<wbr>Graph<wbr>FromCSV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_importstore.default.html#importgraphfromgexf" class="tsd-kind-icon">import<wbr>Graph<wbr>FromGEXF</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="state_importstore.default.html#readcsv" class="tsd-kind-icon">readCSV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_importstore.default.html#readedgecsv" class="tsd-kind-icon">read<wbr>EdgeCSV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="state_importstore.default.html#readgexf" class="tsd-kind-icon">readGEXF</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_importstore.default.html#readnodecsv" class="tsd-kind-icon">read<wbr>NodeCSV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_importstore.default.html#renderimportedgepreview" class="tsd-kind-icon">render<wbr>Import<wbr>Edge<wbr>Preview</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="state_importstore.default.html#renderimportnodepreview" class="tsd-kind-icon">render<wbr>Import<wbr>Node<wbr>Preview</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/state_importstore.iedgefileconfig.html" class="tsd-kind-icon">IEdge<wbr>File<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/state_importstore.inodefileconfig.html" class="tsd-kind-icon">INode<wbr>File<wbr>Config</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
