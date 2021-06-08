@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>default | pipernet</title>
-	<meta name="description" content="Documentation for pipernet">
+	<title>default | clustergrapher</title>
+	<meta name="description" content="Documentation for clustergrapher">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">pipernet</a>
+					<a href="../index.html" class="title">clustergrapher</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">pipernet</a>
+					<a href="../modules.html">clustergrapher</a>
 				</li>
 				<li>
 					<a href="../modules/state_clusterinteractionstore.html">state/ClusterInteractionStore</a>
@@ -110,12 +110,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#chosencluster" class="tsd-kind-icon">chosen<wbr>Cluster</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#confirmclustersplittingtempdata" class="tsd-kind-icon">confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#currentlyhoveredclusterid" class="tsd-kind-icon">currently<wbr>Hovered<wbr>Cluster<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#drawmode" class="tsd-kind-icon">draw<wbr>Mode</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#drawpanelactivate" class="tsd-kind-icon">draw<wbr>Panel<wbr>Activate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#drawstraightline" class="tsd-kind-icon">draw<wbr>Straight<wbr>Line</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#linesegment" class="tsd-kind-icon">line<wbr>Segment</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#selectedcluster" class="tsd-kind-icon">selected<wbr>Cluster</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#selectedclusters" class="tsd-kind-icon">selected<wbr>Clusters</a></li>
 							</ul>
 						</section>
@@ -126,8 +126,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#clusterleftclickcallback" class="tsd-kind-icon">cluster<wbr>Left<wbr>Click<wbr>Callback</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#clusterrightclickcallback" class="tsd-kind-icon">cluster<wbr>Right<wbr>Click<wbr>Callback</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#computesplitcluster" class="tsd-kind-icon">compute<wbr>Split<wbr>Cluster</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#computesplitclusterincircle" class="tsd-kind-icon">compute<wbr>Split<wbr>Cluster<wbr>InCircle</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#flush" class="tsd-kind-icon">flush</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#mergeselectedclusters" class="tsd-kind-icon">merge<wbr>Selected<wbr>Clusters</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#releaseselectedclusters" class="tsd-kind-icon">release<wbr>Selected<wbr>Clusters</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="state_clusterinteractionstore.default.html#splitcluster" class="tsd-kind-icon">split<wbr>Cluster</a></li>
 							</ul>
@@ -147,7 +147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L20">src/state/ClusterInteractionStore.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L28">src/state/ClusterInteractionStore.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="state_clusterinteractionstore.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h4>
@@ -158,12 +158,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="chosencluster" class="tsd-anchor"></a>
+					<h3>chosen<wbr>Cluster</h3>
+					<div class="tsd-signature tsd-kind-icon">chosen<wbr>Cluster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L46">src/state/ClusterInteractionStore.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>the selected Cluster UUID used in choosing which cluster to be split</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="confirmclustersplittingtempdata" class="tsd-anchor"></a>
 					<h3>confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data</h3>
 					<div class="tsd-signature tsd-kind-icon">confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L214">src/state/ClusterInteractionStore.ts:214</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L199">src/state/ClusterInteractionStore.ts:199</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">currently<wbr>Hovered<wbr>Cluster<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L30">src/state/ClusterInteractionStore.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L39">src/state/ClusterInteractionStore.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -200,32 +220,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="drawpanelactivate" class="tsd-anchor"></a>
-					<h3>draw<wbr>Panel<wbr>Activate</h3>
-					<div class="tsd-signature tsd-kind-icon">draw<wbr>Panel<wbr>Activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<a name="drawmode" class="tsd-anchor"></a>
+					<h3>draw<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">draw<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/state_clusterinteractionstore.drawmode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DrawMode</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L183">src/state/ClusterInteractionStore.ts:183</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>description</dt>
-							<dd><p>whether the drawing panel used in ClusterSplit is active</p>
-							</dd>
-							<dt>author</dt>
-							<dd><p>Zichen XU</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="drawstraightline" class="tsd-anchor"></a>
-					<h3>draw<wbr>Straight<wbr>Line</h3>
-					<div class="tsd-signature tsd-kind-icon">draw<wbr>Straight<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L191">src/state/ClusterInteractionStore.ts:191</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L176">src/state/ClusterInteractionStore.ts:176</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -240,12 +240,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="drawpanelactivate" class="tsd-anchor"></a>
+					<h3>draw<wbr>Panel<wbr>Activate</h3>
+					<div class="tsd-signature tsd-kind-icon">draw<wbr>Panel<wbr>Activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L168">src/state/ClusterInteractionStore.ts:168</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>description</dt>
+							<dd><p>whether the drawing panel used in ClusterSplit is active</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>Zichen XU</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="linesegment" class="tsd-anchor"></a>
 					<h3>line<wbr>Segment</h3>
 					<div class="tsd-signature tsd-kind-icon">line<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L199">src/state/ClusterInteractionStore.ts:199</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L184">src/state/ClusterInteractionStore.ts:184</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -261,32 +281,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="selectedcluster" class="tsd-anchor"></a>
-					<h3>selected<wbr>Cluster</h3>
-					<div class="tsd-signature tsd-kind-icon">selected<wbr>Cluster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L37">src/state/ClusterInteractionStore.ts:37</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>description</dt>
-							<dd><p>the selected Cluster UUID used in choosing which cluster to be split</p>
-							</dd>
-							<dt>author</dt>
-							<dd><p>Zichen XU</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="selectedclusters" class="tsd-anchor"></a>
 					<h3>selected<wbr>Clusters</h3>
 					<div class="tsd-signature tsd-kind-icon">selected<wbr>Clusters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L44">src/state/ClusterInteractionStore.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L53">src/state/ClusterInteractionStore.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L93">src/state/ClusterInteractionStore.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L103">src/state/ClusterInteractionStore.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L64">src/state/ClusterInteractionStore.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L73">src/state/ClusterInteractionStore.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -397,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L104">src/state/ClusterInteractionStore.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L114">src/state/ClusterInteractionStore.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -439,7 +439,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L230">src/state/ClusterInteractionStore.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L215">src/state/ClusterInteractionStore.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,6 +460,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="computesplitclusterincircle" class="tsd-anchor"></a>
+					<h3>compute<wbr>Split<wbr>Cluster<wbr>InCircle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Split<wbr>Cluster<wbr>InCircle<span class="tsd-signature-symbol">(</span>centerX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, centerY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L262">src/state/ClusterInteractionStore.ts:262</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>centerX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>centerY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="flush" class="tsd-anchor"></a>
 					<h3>flush</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -469,7 +498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L51">src/state/ClusterInteractionStore.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L60">src/state/ClusterInteractionStore.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -477,36 +506,6 @@
 									<dt>description</dt>
 									<dd><p>flush the above fields in situations like switching VisualizationMode
 										re-import or after graph mutation</p>
-									</dd>
-									<dt>author</dt>
-									<dd><p>Zichen XU</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mergeselectedclusters" class="tsd-anchor"></a>
-					<h3>merge<wbr>Selected<wbr>Clusters</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">merge<wbr>Selected<wbr>Clusters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L124">src/state/ClusterInteractionStore.ts:124</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>description</dt>
-									<dd><p>loop through the selected clusters and set the nodes within that cluster
-											the newly-formed attribute is named _merge-cluster
-											and the value to that attribute is the Time() of this time
-										other nodes unrelated will be set to empty string in this attribute</p>
 									</dd>
 									<dt>author</dt>
 									<dd><p>Zichen XU</p>
@@ -527,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L154">src/state/ClusterInteractionStore.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L137">src/state/ClusterInteractionStore.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -548,13 +547,13 @@
 					<a name="splitcluster" class="tsd-anchor"></a>
 					<h3>split<wbr>Cluster</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">split<wbr>Cluster<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">split<wbr>Cluster<span class="tsd-signature-symbol">(</span>attribute<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, valueInWhite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, valueInRed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/grp202004/pipernet.online/blob/513e980/src/state/ClusterInteractionStore.ts#L284">src/state/ClusterInteractionStore.ts:284</a></li>
+									<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L319">src/state/ClusterInteractionStore.ts:319</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,6 +568,20 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>attribute: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>valueInWhite: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>valueInRed: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -588,6 +601,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/state_clusterinteractionstore.drawmode.html" class="tsd-kind-icon">Draw<wbr>Mode</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -597,22 +613,22 @@
 								<a href="state_clusterinteractionstore.default.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#chosencluster" class="tsd-kind-icon">chosen<wbr>Cluster</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="state_clusterinteractionstore.default.html#confirmclustersplittingtempdata" class="tsd-kind-icon">confirm<wbr>Cluster<wbr>Splitting<wbr>Temp<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="state_clusterinteractionstore.default.html#currentlyhoveredclusterid" class="tsd-kind-icon">currently<wbr>Hovered<wbr>Cluster<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="state_clusterinteractionstore.default.html#drawmode" class="tsd-kind-icon">draw<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="state_clusterinteractionstore.default.html#drawpanelactivate" class="tsd-kind-icon">draw<wbr>Panel<wbr>Activate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="state_clusterinteractionstore.default.html#drawstraightline" class="tsd-kind-icon">draw<wbr>Straight<wbr>Line</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="state_clusterinteractionstore.default.html#linesegment" class="tsd-kind-icon">line<wbr>Segment</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="state_clusterinteractionstore.default.html#selectedcluster" class="tsd-kind-icon">selected<wbr>Cluster</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="state_clusterinteractionstore.default.html#selectedclusters" class="tsd-kind-icon">selected<wbr>Clusters</a>
@@ -630,10 +646,10 @@
 								<a href="state_clusterinteractionstore.default.html#computesplitcluster" class="tsd-kind-icon">compute<wbr>Split<wbr>Cluster</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="state_clusterinteractionstore.default.html#flush" class="tsd-kind-icon">flush</a>
+								<a href="state_clusterinteractionstore.default.html#computesplitclusterincircle" class="tsd-kind-icon">compute<wbr>Split<wbr>Cluster<wbr>InCircle</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="state_clusterinteractionstore.default.html#mergeselectedclusters" class="tsd-kind-icon">merge<wbr>Selected<wbr>Clusters</a>
+								<a href="state_clusterinteractionstore.default.html#flush" class="tsd-kind-icon">flush</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="state_clusterinteractionstore.default.html#releaseselectedclusters" class="tsd-kind-icon">release<wbr>Selected<wbr>Clusters</a>

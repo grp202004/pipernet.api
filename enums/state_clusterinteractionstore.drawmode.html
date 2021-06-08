@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VisualizationMode | clustergrapher</title>
+	<title>DrawMode | clustergrapher</title>
 	<meta name="description" content="Documentation for clustergrapher">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,33 +55,19 @@
 					<a href="../modules.html">clustergrapher</a>
 				</li>
 				<li>
-					<a href="../modules/state_preferencesstore.html">state/PreferencesStore</a>
+					<a href="../modules/state_clusterinteractionstore.html">state/ClusterInteractionStore</a>
 				</li>
 				<li>
-					<a href="state_preferencesstore.visualizationmode.html">VisualizationMode</a>
+					<a href="state_clusterinteractionstore.drawmode.html">DrawMode</a>
 				</li>
 			</ul>
-			<h1>Enumeration VisualizationMode</h1>
+			<h1>Enumeration DrawMode</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>description</dt>
-						<dd><p>the four interaction modes</p>
-						</dd>
-						<dt>author</dt>
-						<dd><p>Zichen XU, Zhiyuan LYU</p>
-						</dd>
-						<dt>export</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -89,10 +75,10 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_preferencesstore.visualizationmode.html#clusterselection" class="tsd-kind-icon">Cluster<wbr>Selection</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_preferencesstore.visualizationmode.html#clustersplitting" class="tsd-kind-icon">Cluster<wbr>Splitting</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_preferencesstore.visualizationmode.html#nodeselection" class="tsd-kind-icon">Node<wbr>Selection</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_preferencesstore.visualizationmode.html#normal" class="tsd-kind-icon">Normal</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_clusterinteractionstore.drawmode.html#centercircle" class="tsd-kind-icon">Center<wbr>Circle</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_clusterinteractionstore.drawmode.html#freecircle" class="tsd-kind-icon">Free<wbr>Circle</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_clusterinteractionstore.drawmode.html#freeline" class="tsd-kind-icon">Free<wbr>Line</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state_clusterinteractionstore.drawmode.html#straightline" class="tsd-kind-icon">Straight<wbr>Line</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,42 +87,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="clusterselection" class="tsd-anchor"></a>
-					<h3>Cluster<wbr>Selection</h3>
-					<div class="tsd-signature tsd-kind-icon">Cluster<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Cluster Selection&quot;</span></div>
+					<a name="centercircle" class="tsd-anchor"></a>
+					<h3>Center<wbr>Circle</h3>
+					<div class="tsd-signature tsd-kind-icon">Center<wbr>Circle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/PreferencesStore.ts#L11">src/state/PreferencesStore.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L10">src/state/ClusterInteractionStore.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="clustersplitting" class="tsd-anchor"></a>
-					<h3>Cluster<wbr>Splitting</h3>
-					<div class="tsd-signature tsd-kind-icon">Cluster<wbr>Splitting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Cluster Splitting&quot;</span></div>
+					<a name="freecircle" class="tsd-anchor"></a>
+					<h3>Free<wbr>Circle</h3>
+					<div class="tsd-signature tsd-kind-icon">Free<wbr>Circle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/PreferencesStore.ts#L13">src/state/PreferencesStore.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L9">src/state/ClusterInteractionStore.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="nodeselection" class="tsd-anchor"></a>
-					<h3>Node<wbr>Selection</h3>
-					<div class="tsd-signature tsd-kind-icon">Node<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Node Selection&quot;</span></div>
+					<a name="freeline" class="tsd-anchor"></a>
+					<h3>Free<wbr>Line</h3>
+					<div class="tsd-signature tsd-kind-icon">Free<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/PreferencesStore.ts#L12">src/state/PreferencesStore.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L8">src/state/ClusterInteractionStore.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="normal" class="tsd-anchor"></a>
-					<h3>Normal</h3>
-					<div class="tsd-signature tsd-kind-icon">Normal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Normal&quot;</span></div>
+					<a name="straightline" class="tsd-anchor"></a>
+					<h3>Straight<wbr>Line</h3>
+					<div class="tsd-signature tsd-kind-icon">Straight<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/PreferencesStore.ts#L10">src/state/PreferencesStore.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/grp202004/PiperNet/blob/9666cca/src/state/ClusterInteractionStore.ts#L7">src/state/ClusterInteractionStore.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -149,7 +135,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/state_preferencesstore.html">state/<wbr>Preferences<wbr>Store</a>
+						<a href="../modules/state_clusterinteractionstore.html">state/<wbr>Cluster<wbr>Interaction<wbr>Store</a>
 					</li>
 				</ul>
 			</nav>
@@ -158,26 +144,26 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="state_preferencesstore.visualizationmode.html" class="tsd-kind-icon">Visualization<wbr>Mode</a>
+						<a href="state_clusterinteractionstore.drawmode.html" class="tsd-kind-icon">Draw<wbr>Mode</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state_preferencesstore.visualizationmode.html#clusterselection" class="tsd-kind-icon">Cluster<wbr>Selection</a>
+								<a href="state_clusterinteractionstore.drawmode.html#centercircle" class="tsd-kind-icon">Center<wbr>Circle</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state_preferencesstore.visualizationmode.html#clustersplitting" class="tsd-kind-icon">Cluster<wbr>Splitting</a>
+								<a href="state_clusterinteractionstore.drawmode.html#freecircle" class="tsd-kind-icon">Free<wbr>Circle</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state_preferencesstore.visualizationmode.html#nodeselection" class="tsd-kind-icon">Node<wbr>Selection</a>
+								<a href="state_clusterinteractionstore.drawmode.html#freeline" class="tsd-kind-icon">Free<wbr>Line</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state_preferencesstore.visualizationmode.html#normal" class="tsd-kind-icon">Normal</a>
+								<a href="state_clusterinteractionstore.drawmode.html#straightline" class="tsd-kind-icon">Straight<wbr>Line</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/state_preferencesstore.default.html" class="tsd-kind-icon">default</a>
+						<a href="../classes/state_clusterinteractionstore.default.html" class="tsd-kind-icon">default</a>
 					</li>
 				</ul>
 			</nav>

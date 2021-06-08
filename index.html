@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>pipernet</title>
-	<meta name="description" content="Documentation for pipernet">
+	<title>clustergrapher</title>
+	<meta name="description" content="Documentation for clustergrapher">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script async src="assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">pipernet</a>
+					<a href="index.html" class="title">clustergrapher</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,7 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>pipernet</h1>
+			<h1>clustergrapher</h1>
 		</div>
 	</div>
 </header>
@@ -96,9 +96,7 @@
 				<pre><code><span style="color: #001080">Source</span><span style="color: #000000">, </span><span style="color: #001080">Target</span><span style="color: #000000">, </span><span style="color: #001080">Weight</span><span style="color: #000000">,   </span><span style="color: #001080">Where</span><span style="color: #000000"> </span><span style="color: #001080">first</span><span style="color: #000000"> </span><span style="color: #001080">met</span>
 <span style="color: #098658">1</span><span style="color: #000000">,      </span><span style="color: #098658">45</span><span style="color: #000000">,     </span><span style="color: #098658">3</span><span style="color: #000000">,        </span><span style="color: #001080">London</span>
 </code></pre>
-				<a href="#which-specify-the-simple-undirected-relationship-between-source-and-target-other-fields-are-optional" id="which-specify-the-simple-undirected-relationship-between-source-and-target-other-fields-are-optional" style="color: inherit; text-decoration: none;">
-					<h2>which specify the simple undirected relationship between <code>Source</code> and <code>Target</code>, other fields are optional.</h2>
-				</a>
+				<p>which specify the simple undirected relationship between <code>Source</code> and <code>Target</code>, other fields are optional.</p>
 				<p><strong>- Importing more than labels: nodes and edges attributes</strong></p>
 				<p>To import attributes we will need to proceed on, choose &quot;I want to import Node file&quot; and specify one for the list of nodes.</p>
 				<p>Nodes must have at least an <strong><code>ID</code></strong> (you can specify which column is the ID), other fields are optional, an example file with a list of nodes:</p>
@@ -229,22 +227,37 @@
 						<a href="modules/components_dialogs_importdialog.html">components/dialogs/import<wbr>Dialog</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_canvasdrawpanel.html">components/panels/<wbr>Canvas<wbr>Draw<wbr>Panel</a>
+						<a href="modules/components_panels_canvasdraw_canvasdrawcentercirclepanel.html">components/panels/<wbr>Canvas<wbr>Draw/<wbr>Canvas<wbr>Draw<wbr>Center<wbr>Circle<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_canvasdrawstraightlinepanel.html">components/panels/<wbr>Canvas<wbr>Draw<wbr>Straight<wbr>Line<wbr>Panel</a>
+						<a href="modules/components_panels_canvasdraw_canvasdrawfreecirclepanel.html">components/panels/<wbr>Canvas<wbr>Draw/<wbr>Canvas<wbr>Draw<wbr>Free<wbr>Circle<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_clusterpanel.html">components/panels/<wbr>Cluster<wbr>Panel</a>
+						<a href="modules/components_panels_canvasdraw_canvasdrawfreehandpanel.html">components/panels/<wbr>Canvas<wbr>Draw/<wbr>Canvas<wbr>Draw<wbr>Freehand<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_canvasdraw_canvasdrawpanel.html">components/panels/<wbr>Canvas<wbr>Draw/<wbr>Canvas<wbr>Draw<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_canvasdraw_canvasdrawstraightlinepanel.html">components/panels/<wbr>Canvas<wbr>Draw/<wbr>Canvas<wbr>Draw<wbr>Straight<wbr>Line<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/components_panels_deleteedgeinteractionpanel.html">components/panels/<wbr>Delete<wbr>Edge<wbr>Interaction<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_edgespanel.html">components/panels/<wbr>Edges<wbr>Panel</a>
+						<a href="modules/components_panels_graphoptions_clusterpanel.html">components/panels/<wbr>Graph<wbr>Options/<wbr>Cluster<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_graphoptionscard.html">components/panels/<wbr>Graph<wbr>Options<wbr>Card</a>
+						<a href="modules/components_panels_graphoptions_edgespanel.html">components/panels/<wbr>Graph<wbr>Options/<wbr>Edges<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_graphoptions_graphoptionscard.html">components/panels/<wbr>Graph<wbr>Options/<wbr>Graph<wbr>Options<wbr>Card</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_graphoptions_labelspanel.html">components/panels/<wbr>Graph<wbr>Options/<wbr>Labels<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_graphoptions_nodespanel.html">components/panels/<wbr>Graph<wbr>Options/<wbr>Nodes<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/components_panels_interactionmodepanel_clustersplittingpanelstack.html">components/panels/<wbr>Interaction<wbr>Mode<wbr>Panel/<wbr>Cluster<wbr>Splitting<wbr>Panel<wbr>Stack</a>
@@ -256,19 +269,22 @@
 						<a href="modules/components_panels_interactionmodepanel_nodeselectionpanel.html">components/panels/<wbr>Interaction<wbr>Mode<wbr>Panel/<wbr>Node<wbr>Selection<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_labelspanel.html">components/panels/<wbr>Labels<wbr>Panel</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="modules/components_panels_multidetailpanel.html">components/panels/<wbr>Multi<wbr>Detail<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/components_panels_nodedetailpanel.html">components/panels/<wbr>Node<wbr>Detail<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_nodespanel.html">components/panels/<wbr>Nodes<wbr>Panel</a>
+						<a href="modules/components_panels_rightclickpanel_rightclickbackgroundmenu.html">components/panels/<wbr>Right<wbr>Click<wbr>Panel/<wbr>Right<wbr>Click<wbr>Background<wbr>Menu</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/components_panels_rightclickpanel.html">components/panels/<wbr>Right<wbr>Click<wbr>Panel</a>
+						<a href="modules/components_panels_rightclickpanel_rightclickclustermenu.html">components/panels/<wbr>Right<wbr>Click<wbr>Panel/<wbr>Right<wbr>Click<wbr>Cluster<wbr>Menu</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_rightclickpanel_rightclicknodemenu.html">components/panels/<wbr>Right<wbr>Click<wbr>Panel/<wbr>Right<wbr>Click<wbr>Node<wbr>Menu</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_panels_rightclickpanel_rightclickpanel.html">components/panels/<wbr>Right<wbr>Click<wbr>Panel/<wbr>Right<wbr>Click<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/components_panels_searchpanel.html">components/panels/<wbr>Search<wbr>Panel</a>
@@ -289,7 +305,16 @@
 						<a href="modules/components_utils_datasheetdialogwrapper.html">components/utils/<wbr>Data<wbr>Sheet<wbr>Dialog<wbr>Wrapper</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_formclusteroptionscard.html">components/utils/<wbr>Form<wbr>Cluster<wbr>Options<wbr>Card</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_formtwoclusteroptionscard.html">components/utils/<wbr>Form<wbr>Two<wbr>Cluster<wbr>Options<wbr>Card</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/components_utils_inputformutils.html">components/utils/<wbr>Input<wbr>Form<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/components_utils_menuitemwithtooltip.html">components/utils/<wbr>Menu<wbr>Item<wbr>With<wbr>Tooltip</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/components_utils_nodeadder.html">components/utils/<wbr>Node<wbr>Adder</a>
@@ -344,6 +369,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/state_searchstore.html">state/<wbr>Search<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/state_signalstore.html">state/<wbr>Signal<wbr>Store</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/state_utils_mouseeventutils.html">state/utils/<wbr>Mouse<wbr>Event<wbr>Utils</a>
